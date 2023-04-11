@@ -2,6 +2,7 @@ const mario = document.querySelector(".mario");
 const cano = document.querySelector(".cano");
 const grama = document.querySelector(".grama");
 const nuvem = document.querySelector(".nuvem");
+const modalGameOver = document.querySelector(".modal-game-over");
 
 const jumpFunc = () => {
         mario.classList.add("jump");
@@ -32,6 +33,8 @@ const loopVerificacao = setInterval(() => {
 
         nuvem.style.animation = "none";
         nuvem.style.left = `${nuvemPosition}px`;
+
+        modalGameOver.style.display = "flex";
 
         clearInterval(loopVerificacao);
     }

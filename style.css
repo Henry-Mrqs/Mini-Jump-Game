@@ -116,3 +116,47 @@
     font-size: 20px;
     font-weight: bold;
 }
+
+
+/* Game-Over */
+
+.modal-game-over {
+    display: none;
+    position: absolute;
+    top: 33%;
+    left: 33%;
+    width: 33%;
+    height: 33%;
+    background: radial-gradient(rgba(255, 255, 255, .6), transparent);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+button.restart-buttom {
+    width: 64px;
+    height: 64px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    background: rgb(0, 128, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restart-icon {
+    width: 35px;
+}
+.restart-icon:hover {
+    animation: restartRotation 1s;
+}
+
+@keyframes restartRotation{
+    from{
+        rotate: 180deg
+    }
+    to{
+        rotate: 0deg;
+    }
+}
