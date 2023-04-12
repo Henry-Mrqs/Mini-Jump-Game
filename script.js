@@ -41,3 +41,4 @@ const loopVerificacao = setInterval(() => {
 }, 10)
 
 document.addEventListener("keydown", jumpFunc);
+document.addEventListener("click", jumpFunc);
